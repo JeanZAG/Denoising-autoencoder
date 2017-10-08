@@ -7,8 +7,7 @@ For now only gaussian noise is avalable.
 
 This algorithm commes with two exemple of utilisation:
 
-  -one that shows you exactly how the autoencoder is reconstructing data : it's a visual proof that the algortihm works properly!
-  
+  -one that shows you exactly how the autoencoder is reconstructing data : it's a visual proof that the algortihm works properly!  
   -the other one is an exemple of how you should use it for preprocessing.
 
 Both exemples works on MNIST dataset.
