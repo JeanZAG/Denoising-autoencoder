@@ -14,3 +14,5 @@ Both exemples works on MNIST dataset.
 
 dependencies : Python 2.7, TensorFLow, numpy, matplotlib
 
+If you are using Python with version > 3 you have to change in the last line of DAE\_exemple.py the "raw\_input" into "input" and it should work just fine (tested for python 3.6.2)
+
