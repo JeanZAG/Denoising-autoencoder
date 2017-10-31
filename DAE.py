@@ -1,7 +1,6 @@
 ###Algorihtm first implemented for UPMC-Isir
-###it's due to be integrated to SyncPy 
-###https://github.com/syncpy/SyncPy/tree/master/src/Methods/utils
-### it should appear soon in this link 
+###it's original version is avalable on the link below
+###https://github.com/syncpy/SyncPy/blob/master/src/Methods/utils/DAE.py
 ###
 ### module author : Jean Zagdoun 
 
@@ -34,7 +33,7 @@ def DAE(data, Archi, noise = Gaussian, batch_size = 500,pre_pross=True, training
    every layer of the neural net is trained to encode in the best way possible so that it will be able to reconstruct data from the previous layer.
    The algorithm can be used just for pre-processing in that case you are just interested in finding the encoding weights,
    but decoding weights can also be usefull for exemple if you want to compare imitation as a social behavior or 
-   if you want to know if a part of an specific image is hidden by a random object
+   if you want to know if a part of a specific image is hidden by a random object
 
    **reference paper** : 
    
@@ -67,7 +66,7 @@ def DAE(data, Archi, noise = Gaussian, batch_size = 500,pre_pross=True, training
     to see an exemple of utilisation in case of preprocessing '/SyncPy-master/exemples/DAE_pre_processing
     
     NB: do not declare a tf.Sessoin() before or after using DAE instead use the current DAE session.
-    To do so you need to enter "sess = tf.get_default_session() "
+    To do so you need to enter "sess = tf.get_default_session()" after the call of DAE
      """
      
     input_size = data.shape[1]
